@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(../imagenes/paredes-decoradas-con-texturas-1024x573.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px 900px;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+}
+
+.form-registro{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 7px;    
+}
+
+.titulo {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid #0F9F96;
+}
+
+.cont-inputs{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid darkgray
+}
+
+.input-48{
+    width: 50%;
+        box-shadow: 0;
+  border: 0;
+  background-color: rgba(0, 0, 0, .6);
+  margin-bottom: 35px;
+  height: 30px;
+  border: solid 2px rgba(255,255,255,.1);
+  font-size: 20px;
+  color: #F0FFFF;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: right;
+  transition: all 250ms ease;
+}
+
+.input-100{
+    width: 100%;
+    box-shadow: 0;
+  border: 0;
+  background-color: rgba(0, 0, 0, .6);
+  margin-bottom: 35px;
+  height: 30px;
+  border: solid 2px rgba(255,255,255,.1);
+  font-size: 20px;
+  color: #F0FFFF;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: right;
+  transition: all 250ms ease;    
+}
+
+.input-48:focus{
+  outline:0px;
+  background-color: rgba(255, 255, 255, .3);
+  border: solid 2px rgba(255,255,255,.01);
+  color: #000;
+}
+.input-100:focus{
+  outline:0px;
+  background-color: rgba(255, 255, 255, .3);
+  border: solid 2px rgba(255,255,255,.01);
+  color: #000;
+}
+
+.btn-send{
+  width: 110%;
+  height: 40px;
+  font-size: 22px;
+  border: 0;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.0);
+  border-bottom: solid 1px #fff;
+  color: #fff;
+  margin-top: 20px;
+  transition: all 200ms ease;
+}
+
+.btn-send:active{
+  background-color: rgba(255, 255, 255,0.2);
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+}
+.btn-send:focus{
+  background-color: rgba(255, 255, 255,0.2);
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+}
+
+.formlink{
+    width: 100%;
+    margin: 7px;
+    font-size: 24px;
+    text-align: center;
+    color: aliceblue
+}
+header{
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0,.3)
+}
+header h1{
+  margin-left: 30px;
+  font-family: montez;
+  font-size: 30px;
+}
+header a{
+  margin-right: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  transition: all ease 300ms;
+}
+header a:hover{
+  color: rgb(180, 210, 212);
+}
+
+a {
+    color: coral
+}

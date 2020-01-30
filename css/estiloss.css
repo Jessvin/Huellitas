@@ -1,0 +1,71 @@
+aside#lateral{
+   float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+.oscuro{
+    padding: 15px;
+    background-color: #35424a;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+
+article#main-col{
+    float: left;
+    width: 65%;
+    
+}
+.cont {
+    height: 300px;
+    width: 300px;
+    -webkit-perspective: 700;
+    margin: 30px 30px 30px 30px;
+    
+    
+}
+
+.cont2 {
+    height: 300px;
+    width: 300px;
+    -webkit-perspective: 700;
+    margin: 30px 30px 30px 30px;
+    
+    
+}
+
+
+.carta {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 4s;
+}
+
+.carta:hover {
+    transform: rotateY(180deg);
+    
+}
+
+.lado {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+   position: absolute; 
+}
+
+.frente {
+    background: crimson;
+}
+
+.atras {
+    background: #f0f0f0;
+    transform: rotateY(180deg);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
