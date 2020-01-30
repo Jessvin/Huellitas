@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Registro</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+        <link rel="stylesheet" href="css/regis.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
+        <script type="text/javascript">
+            window.onload = function () {
+                document.formulario.nombre.focus();
+                document.formulario.addEventListener('submit', validarFormulario);
+            }
+            function validarFormulario(evObject) {
+                evObject.preventDefault();
+                var todoCorrecto = true;
+                var formulario = document.formulario;
+                for (var i = 0; i < formulario.length; i++) {
+                    if (formulario[i].type == 'text') {
+                        if (formulario[i].value == null || formulario[i].value.length == 0 || /^\s*$/.test(formulario[i].value)) {
+                            alert(formulario[i].name + ' no puede estar vacío o contener sólo espacios en blanco');
+                            todoCorrecto = false;
+                        }
+                    }
+                }
+                if (todoCorrecto == true) {
+                    formulario.submit();
+                }
+            }
+        </script>     
+    </head> 
+    <body> 
+        <header>
+            <h1 class="title">Spa Tortuga</h1>
+            <a href="index.html">Inicio</a>
+        </header>
+        <br>
+        <form action="" method="POST" class="form-registro" name="registrar">
+            <h1 class="titulo">Registrate</h1>
+            <div class="cont-inputs">
+                <input type="text" id="nombres" name="nombres"  placeholder="Nombre(s)" class="input-48" required>
+
+                <input type="text" id="ap_paterno" name="ap_paterno" placeholder="Apellido Paterno" class="input-48" required>
+
+                <input type="text" id="ap_materno" name="ap_materno" placeholder="Apellido Materno" class="input-48" required>
+
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" max="2015-12-31" min="1900-12-31" class="input-48" required>
+
+                <input type="radio" id="sexo" name="sexo" value="Masculino" required>
+                <img src="imagenes/hombre.svg" width="50" height="50">
+
+                <input type="radio" id="sexo" name="sexo" value="Femenino" required> 
+                <img src="imagenes/mujer.svg" width="50" height="50">
+
+                <input type="text" id="telefono" name="telefono" placeholder="Telefono" class="input-48" maxlength="10" required>
+
+                <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" class="input-48" required>
+
+                <input type="password" id="password" name="password" placeholder="Password" class="input-48" required>
+                <br>
+                <input type="submit" id="registrar" value="Registrar" class="btn-send">
+                <br>
+                <p class="formlink">Tienes una cuenta &nbsp;&nbsp;&nbsp;<a href="login.html">Iniciar Sesion</a></p>
+            </div>    
+        </form>    
+    </body>    
+</html>    

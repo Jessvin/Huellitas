@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/esti.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
+    <script type="text/javascript">
+            window.onload = function () {
+            document.formulario.nombre.focus();
+            document.formulario.addEventListener('submit', validarFormulario);
+            }
+        function validarFormulario(evObject) {
+            evObject.preventDefault();
+            var todoCorrecto = true;
+            var formulario = document.formulario;
+            for (var i=0; i<formulario.length; i++) {
+                if(formulario[i].type =='text') {
+                               if (formulario[i].value == null || formulario[i].value.length == 0 || /^\s*$/.test(formulario[i].value)){
+                               alert (formulario[i].name+ ' no puede estar vacío o contener sólo espacios en blanco');
+                               todoCorrecto=false;
+                               }
+                }
+                }
+            if (todoCorrecto ==true) {formulario.submit();}
+            }
+        </script>  
+  </head>
+  <body>
+    <div class="contenedor">
+
+      <header>
+        <h1 class="title">Spa Tortuga</h1>
+        <a href="registro.html">Registrate</a>
+      </header>
+      <div class="login" name="formulario">
+        <article class="fondo">
+          <img src="imagenes/icono.png" alt="User">
+          <h3>Inicio de Sesión</h3>
+          <form class="" action="index2.html" method="post">
+            <span class="icon-user"></span><input class="inp" type="text" name="user" value="" placeholder="Nombre de Usuario"><br>
+            <span class="icon-key"></span><input class="inp" type="password" name="pass" value="" placeholder="Password"><br>
+            
+            <input class="boton" type="submit" name="inicio" value="Iniciar Sesión">
+          </form>
+        </article>
+      </div>
+
+    </div>
+  </body>
+</html>

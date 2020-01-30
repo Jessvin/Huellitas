@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Spa Tortuga
+    </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="servicios de spa">
+    <meta name="keywords" content="spa, spa tortuga, servicios, tortuga">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/estilosn.css">
+    <link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+            <div class="contenedor">
+                <div id="marca">
+                    <h1><span class="resultado"><img src="imagenes/images.png" width="80" height="50">Albergue Huellitas</span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="actual"><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="albergue.html">Albergue</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <section id="registrate">
+        <div class="contenedor">
+            <form>
+                <a href="formu.html"><button type="button" class="boton1">Registrarse</button></a>
+                <a href="login.html"><button type="button" class="boton1">Iniciar Sesion</button></a>
+            </form>
+        </div>
+    </section>
+
+  <section class="form_wrap">
+		<section class="contact_info">
+			<section class="info_title">
+				<span class="fa fa-user-circle"></span>
+				<h2>INFORMACION<br>DE CONTACTO</h2>
+			</section>
+			<section class="info_items">
+				<p><span class="fa fa-envelope"></span> spatortuga@gmail.com</p>
+				<p><span class="fa fa-mobile"></span> 5525618342</p>
+			</section>
+		</section>
+		<form action="mailto" class="form_contact">
+			<h2>Envia un mensaje</h2>
+			<div class="user_info">
+				<label for="names">Nombres *</label>
+				<input type="text" id="names">
+
+				<label for="phone">Telefono / Celular</label>
+				<input type="text" id="phone">
+
+				<label for="email">Correo electronico *</label>
+				<input type="text" id="email">
+
+				<label for="mensaje">Mensaje *</label>
+				<textarea id="mensaje"></textarea>
+
+				<input type="button" value="Enviar Mensaje" id="btnSend">
+			</div>
+		</form>
+	</section>
+    <footer>
+        <p>Spa Tortuga web. Copyright &copy;</p>
+    </footer>
+
+</body>
+
+</html>
